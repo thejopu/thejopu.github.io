@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EggtopiaMC — A friendly community-driven Minecraft experience. Join play.eggtopiamc.com today.">
+  <title>EggtopiaMC | Community Minecraft Server</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">EggtopiaMC</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#status">Status</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#join" class="nav-cta">Play Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-banner">
+        <img src="eggtopia_hero.png" alt="EggtopiaMC server banner" class="hero-image" width="3025" height="1024">
+        <div class="hero-banner-overlay"></div>
+        <div class="hero-banner-fade"></div>
+        <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-body container">
+        <div class="hero-main">
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="status-dot" id="heroStatusDot"></span>
+              <span id="heroStatusText">Checking server…</span>
+            </div>
+            <h1 class="hero-title reveal">A Friendly Community-Driven Minecraft Experience</h1>
+
+            <div class="hero-ip reveal">
+              <div class="ip-block">
+                <div class="ip-block-content">
+                  <span class="ip-label">Server IP</span>
+                  <code class="ip-address" id="serverIp">play.eggtopiamc.com</code>
+                </div>
+                <button class="btn btn-copy" id="copyIpHero" data-ip="play.eggtopiamc.com" aria-label="Copy server IP">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-actions reveal">
+              <a href="https://discord.gg/HfTjp2FbSg" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+                Discord
+              </a>
+              <a href="https://twitch.tv/eggdropyolk" target="_blank" rel="noopener noreferrer" class="btn btn-twitch">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                </svg>
+                Twitch
+              </a>
+            </div>
+          </div>
+
+          <a href="#status" class="scroll-indicator" aria-label="Scroll to server status">
+            <span class="scroll-text">Explore</span>
+            <span class="scroll-arrow">▼</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section status-section" id="status">
+      <div class="section-texture section-texture--stone"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Live Info</span>
+          <h2 class="section-title">Server Status</h2>
+          <p class="section-desc">Real-time server information — jump in when we're online</p>
+        </div>
+
+        <div class="status-console reveal" id="statusBeacon">
+          <div class="status-console-ambient" aria-hidden="true"></div>
+          <div class="status-console-frame">
+            <div class="status-console-shine" aria-hidden="true"></div>
+            <div class="status-console-inner">
+              <div class="status-console-hero">
+                <div class="status-console-signal" id="statusSignal" aria-hidden="true">
+                  <span class="status-console-pulse"></span>
+                  <span class="status-console-ring"></span>
+                </div>
+                <div class="status-console-primary">
+                  <span class="status-console-eyebrow">Network</span>
+                  <span class="status-console-state" id="serverStatus">Checking…</span>
+                </div>
+              </div>
+              <div class="status-console-stats">
+                <div class="status-console-stat">
+                  <span class="status-console-stat-value" id="playerCount">—</span>
+                  <span class="status-console-stat-label">Players Online</span>
+                </div>
+                <div class="status-console-stat status-console-stat-ip">
+                  <span class="status-console-stat-value">play.eggtopiamc.com</span>
+                  <span class="status-console-stat-label">Server Address</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-texture section-texture--wood"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Gameplay</span>
+          <h2 class="section-title">Server Features</h2>
+          <p class="section-desc">Everything you need for an unforgettable Minecraft adventure</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/dungeons.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Dungeons</h3>
+            <p>Explore challenging dungeons and earn unique rewards.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/fishing.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Custom Fishing</h3>
+            <p>Discover rare catches and special fishing content.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/shop.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Shops</h3>
+            <p>Player-focused economy and server shops.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/farm-shop.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Farm Shops</h3>
+            <p>Create automated income through farming.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/skills.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Skills</h3>
+            <p>Level up abilities and unlock progression.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/jobs.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Jobs</h3>
+            <p>Earn money while playing your favourite activities.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/land-claiming.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Land Claiming</h3>
+            <p>Protect your builds and creations.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/auction-house.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Auction House</h3>
+            <p>Trade items with the entire server.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/player-trading.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Player Trading</h3>
+            <p>Safe and easy player-to-player trading.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/pvp.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>PvP</h3>
+            <p>Competitive combat for players who enjoy a challenge.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/cosmetics.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>Cosmetics</h3>
+            <p>Custom weapon skins, tool skins, and visual enhancements.</p>
+          </article>
+          <article class="feature-card feature-highlight reveal">
+            <div class="feature-icon"><img src="assets/no-pay-to-win.png" alt="" width="52" height="52" loading="lazy"></div>
+            <h3>No Pay-To-Win</h3>
+            <p>Absolutely no pay-to-win mechanics. Fair gameplay for everyone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section community-section" id="community">
+      <div class="section-texture section-texture--dirt"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Connect</span>
+          <h2 class="section-title">Join the Community</h2>
+          <p class="section-desc">Stay connected with fellow players and the streamer behind EggtopiaMC</p>
+        </div>
+
+        <div class="community-grid reveal">
+          <div class="community-card">
+            <div class="community-card-header">
+              <div class="community-icon discord-bg">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+              </div>
+              <div class="community-card-text">
+                <h3>Discord Server</h3>
+                <p>Chat with the community, get updates, and find players to team up with.</p>
+              </div>
+            </div>
+            <a href="https://discord.gg/HfTjp2FbSg" target="_blank" rel="noopener noreferrer" class="btn btn-discord btn-full">Join Our Discord</a>
+          </div>
+
+          <div class="community-card">
+            <div class="community-card-header">
+              <div class="community-icon community-icon--avatar">
+                <img src="assets/eggdropyolk.png" alt="Eggdropyolk avatar" width="56" height="56" loading="lazy">
+              </div>
+              <div class="community-card-text">
+                <h3>Eggdropyolk</h3>
+                <p class="twitch-handle">twitch.tv/eggdropyolk</p>
+                <p class="twitch-desc">Streamer &amp; founder of EggtopiaMC. Catch live gameplay, community events, and server updates.</p>
+              </div>
+            </div>
+            <a href="https://twitch.tv/eggdropyolk" target="_blank" rel="noopener noreferrer" class="btn btn-twitch btn-full">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+              </svg>
+              Watch Stream
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="join">
+      <div class="section-texture section-texture--stone"></div>
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-panel reveal">
+          <h2 class="cta-title">Ready to Join?</h2>
+          <p class="cta-desc">Hop on the server and become part of the EggtopiaMC community today.</p>
+          <div class="cta-ip">
+            <div class="ip-block">
+              <div class="ip-block-content">
+                <span class="ip-label">Server IP</span>
+                <code class="ip-address">play.eggtopiamc.com</code>
+              </div>
+              <button class="btn btn-copy" id="copyIpCta" data-ip="play.eggtopiamc.com" aria-label="Copy server IP">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="cta-actions">
+            <a href="https://discord.gg/HfTjp2FbSg" target="_blank" rel="noopener noreferrer" class="btn btn-discord">Join Discord</a>
+            <a href="https://twitch.tv/eggdropyolk" target="_blank" rel="noopener noreferrer" class="btn btn-twitch">Watch Stream</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">EggtopiaMC</span>
+        <p>A Friendly Community-Driven Minecraft Experience</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://discord.gg/HfTjp2FbSg" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://twitch.tv/eggdropyolk" target="_blank" rel="noopener noreferrer">Twitch</a>
+        <a href="#status">Server Status</a>
+        <a href="#features">Features</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> EggtopiaMC. All rights reserved. Not affiliated with Mojang or Microsoft.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
